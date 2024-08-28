@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu Contador</title>
+        <style>
+            body {
+                color: red;
+            }
+
+            h2 {
+                color: inherit;
+            }
+
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Meu Título</h1>
+        <h2>Meu Sub título</h2>
+        <p>kjsdhfkdsjhfk</p>
+        <img onclick="trocaFundo()" src="foto.jpg" alt="">
+        <p>Vá para o <a href="https://www.google.com">Google</a></p>
+        <script>
+            function trocaFundo() {
+                const corAtual = document.body.style.background
+                console.log(corAtual)
+                if (corAtual == "black") {
+                    document.body.style.background=""
+                }  else {
+                    document.body.style.background="black"
+                }
+            }
+
+            document.body.style.background="green"
+        </script>
+    </body>
+</html>
